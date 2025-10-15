@@ -1,0 +1,218 @@
+1. Zamienić wartości dziesiętne 1970 oraz 250 na binarne. Na uzyskanych liczbach w systemie binarnym zrealizować mnożenie, odejmowanie i dodawanie.
+    1970
+        1970 / 2 = 985 | 0
+        985  / 2 = 492 | 1
+        492  / 2 = 246 | 0
+        246  / 2 = 123 | 0
+        123  / 2 = 61  | 1
+        61   / 2 = 30  | 1
+        30   / 2 = 15  | 0
+        15   / 2 = 7   | 1
+        7    / 2 = 3   | 1
+        3    / 2 = 1   | 1
+        1    / 2 = 0   | 1
+    1970 = 11110110010
+
+    250
+        250  / 2 = 125 | 0
+        125  / 2 = 62  | 1
+        62   / 2 = 31  | 0
+        31   / 2 = 15  | 1
+        15   / 2 = 7   | 1
+        7    / 2 = 3   | 1
+        3    / 2 = 1   | 1
+        1    / 2 = 0   | 1
+    250 = 11111010
+
+2. Podzielić wskazane wartości binarne:
+    11011101:101
+          101100
+        -----------------
+        11011101    / 101
+      - 101
+        -----------------
+          11
+      -   00
+        -----------------
+          111
+      -   101
+        -----------------
+           101
+      -    101
+        -----------------
+             00
+      -       0
+        -----------------
+              01    
+      -        0
+        -----------------
+               1
+    11011101:101 = 101100
+
+
+    100111:110
+           110
+        -----------------
+        100111      / 110
+      -  110
+        -----------------
+          111
+      -   110
+        -----------------
+            11
+    100111:110 = 110
+          
+3. Zamienić adres IP na postać binarną  194.204.255.36
+    194
+        194 / 2 = 97 | 0
+        97  / 2 = 48 | 1
+        48  / 2 = 24 | 0
+        24  / 2 = 12 | 0
+        12  / 2 = 6  | 0
+        6   / 2 = 3  | 0
+        3   / 2 = 1  | 1
+        1   / 2 = 0  | 1
+    194 = 11000010
+
+    204
+        204 / 2 = 102 | 0
+        102 / 2 = 51  | 0
+        51  / 2 = 25  | 1
+        25  / 2 = 12  | 1
+        12  / 2 = 6   | 0
+        6   / 2 = 3   | 0
+        3   / 2 = 1   | 1
+        1   / 2 = 0   | 1
+    204 = 11001100
+
+    255
+        255 / 2 = 127 | 1
+        127 / 2 = 63  | 1
+        63  / 2 = 31  | 1
+        31  / 2 = 15  | 1
+        15   / 2 = 7  | 1
+        7    / 2 = 3  | 1
+        3    / 2 = 1  | 1
+        1    / 2 = 0  | 1
+    255 = 11111111
+
+    36
+        36 / 2 = 18 | 0
+        18 / 2 = 9  | 0
+        9  / 2 = 4  | 1
+        4  / 2 = 2  | 0
+        2  / 2 = 1  | 0
+        1  / 2 = 0  | 1
+    36 = 100100
+    
+    194.204.255.36 = 11000010 11001100 11111111 100100
+
+4. Wartości 11010110 oraz 111001101 zamienić na system ósemkowy i szesnastkowy.
+    System szesnastkowy (zgodnie z tabelą widoczną w dokumentacji załączonej do ćwiczeń)
+    11010110 
+        1101 = D
+        0110 = 6
+    11010110 = D6
+    
+    000111001101 (3 zera z przodu dla podzielności bitów)
+        0001 = 1
+        1100 = C
+        1101 = D
+    111001101 = 1CD
+
+    System ósemkowy (zgodnie z tabelą widoczną w dokumentacji załączonej do ćwiczeń)
+    011010110 (1 zero z przodu dla podzielności bitów)
+        011 = 3
+        010 = 2
+        110 = 6
+    11010110 = 326
+
+    111001101
+        111 = 7
+        001 = 1
+        101 = 5
+    111001101 = 715
+        
+5. Liczbę 8 B1FE, D8F3, D951, 21 E842 przedstawić w postaci oktalnej i binarnej.
+    // przypuszczam, ze chodzi o 4 oddzielne liczby. W zadaniu napisane jest 'liczbĘ', natomiast
+    // wspomniana liczba podzielona jest przecinkami. Zakładam zatem wariant 4 oddzielnych liczb.
+
+    8 B1FE
+        8 = 1000
+        B = 1011
+        1 = 0001
+        F = 1111
+        E = 1110
+    8 B1FE = 10001011000111111110 w systemie binarnym
+    010001011000111111110 (1 zero z przodu dla podzielności bitów)
+        010 = 2
+        001 = 0
+        011 = 3
+        000 = 0
+        111 = 7
+        111 = 7
+        110 = 6
+    8 B1FE = 2030776 w systemie ósemkowym
+
+    D8F3
+        D = 1101
+        8 = 1000
+        F = 1111
+        3 = 0011
+    D8F3 = 1101100011110011 1w systemie binarnym
+    001 101 100 011 110 011 (2 zera z przodu dla podzielności bitów)
+        001 = 1
+        101 = 5
+        100 = 4
+        011 = 3
+        110 = 6
+        011 = 3
+    D8F3 = 154363 w systemie ósemkowym
+
+    D951
+        D = 1101
+        9 = 1001
+        5 = 0101
+        1 = 0001
+    D951 = 1101100101010001 w systemie binarnym
+    001101100101010001 (2 zera z przodu dla podzielności bitów)
+        001 = 1
+        101 = 5
+        100 = 4
+        101 = 5
+        010 = 2
+        001 = 1
+    D951 = 154521 w systemie ósemkowym
+
+    21 E842
+        2 = 0010
+        1 = 0001
+        E = 1110
+        8 = 1000
+        4 = 0100
+        2 = 0010
+    21 E842 001000011110100001000010 = w systemie binarnym
+    001000011110100001000010
+        001 = 1
+        000 = 0
+        011 = 3
+        110 = 6
+        100 = 4
+        001 = 1
+        000 = 0
+        010 = 2
+    21 E842 = 10364102 w systemie ósemkowym
+
+6. Liczbę 2021 oraz 1980 przedstawić w postaci kodu NKB oraz BCD.
+
+ 
+7. Zapisać liczbę -24 oraz 24 w systemie ZM.
+
+ 
+8. Zapisać liczbę -15 oraz 15 w systemie U1.
+
+ 
+9. Przedstawić wartość 1830,456 w postaci binarnej stałoprzecinkowej.
+
+ 
+10. Zamienić wartość 111101101,11101 na postać dziesiętną.
